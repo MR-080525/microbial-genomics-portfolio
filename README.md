@@ -10,6 +10,17 @@ Welcome to my computational biology portfolio. This repository tracks my academi
   * *Objective:* (e.g., "Differential expression analysis of RNA-seq data from antibiotic-resistant bacterial strains").
   * *Tools:* (e.g., `R`, `Bioconductor`, `DESeq2`, `ggplot2`).
 
+  * **E. coli Reference Genome Extraction & Analysis**
+  * *Dataset:* *Escherichia coli* str. K-12 substr. MG1655 (4.6 Megabase Complete Genome)
+  * *Automation Script:* [`calculate_gc.sh`](./calculate_gc.sh) — A memory-safe Bash script that extracts genomic counts and calculates exact GC Content signatures without encountering line-buffer overflow crashes.
+  * *Calculated Output:* `GC Content: 50.7907%`
+  * *Tools:* `wget`, `grep`, `tr`, `wc`, `awk`
+
+* **FASTQ High-Throughput Sequence Evaluation**
+  * *Dataset:* [`mock_reads.fastq`](./mock_reads.fastq) — Custom 4-record raw sequencing test data structured to simulate Illumina instrument outputs.
+  * *Objective:* Practiced separating nucleotide reads from Phred-33 quality score arrays to identify low-precision laser tracking anomalies and enzyme degradation cycles on the command line.
+  * *Tools:* `grep`, `awk`, `sed` (BSD/GNU lines-stepping loops)
+
 ## 🛠️ Compute Environment & Reproducibility
 To ensure perfect reproducibility across different hardware architectures, this project uses isolated environment configurations.
 
